@@ -12,7 +12,21 @@ import {
   TextInput,
   View,
 } from 'react-native';
-import DateTimePicker from '@react-native-community/datetimepicker';
+const DateTimePicker = ({ value, onChange }: any) => {
+  const d = value instanceof Date ? value : new Date(value);
+  const str = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+  return (
+    <TextInput
+      style={{ borderWidth: 1, borderColor: '#ccc', borderRadius: 8, padding: 8, textAlign: 'center', color: '#000' }}
+      defaultValue={str}
+      placeholder="YYYY-MM-DD"
+      onEndEditing={(e) => {
+        const parsed = new Date(e.nativeEvent.text);
+        if (!isNaN(parsed.getTime())) onChange({ type: 'set' }, parsed);
+      }}
+    />
+  );
+};
 import { Feather } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
