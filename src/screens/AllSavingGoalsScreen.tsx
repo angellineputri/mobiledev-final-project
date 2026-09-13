@@ -9,7 +9,7 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFocusEffect } from '@react-navigation/native';
 import { Feather } from '@expo/vector-icons';
-import { Image } from 'expo-image';
+import { Image } from 'react-native';
 import { useTheme } from '../hooks/use-theme';
 import { Radii, ScreenPadding } from '../constants/theme';
 import { formatMoney } from '../logic/moneyFormatter';
