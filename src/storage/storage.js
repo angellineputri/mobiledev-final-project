@@ -1,7 +1,19 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import * as FileSystem from 'expo-file-system';
-import * as Sharing from 'expo-sharing';
-import * as DocumentPicker from 'expo-document-picker';
+
+// expo-file-system is not available in Expo Snack — stub it so the app loads.
+// Export/import backup and goal-photo persistence are disabled in Snack.
+const FileSystem = {
+  documentDirectory: '',
+  EncodingType: { Base64: 'base64', UTF8: 'utf8' },
+  makeDirectoryAsync: async () => {},
+  copyAsync: async () => {},
+  deleteAsync: async () => {},
+  getInfoAsync: async () => ({ exists: false }),
+  readAsStringAsync: async () => { throw new Error('Not available in Snack'); },
+  writeAsStringAsync: async () => { throw new Error('Not available in Snack'); },
+};
+const Sharing = { isAvailableAsync: async () => false, shareAsync: async () => {} };
+const DocumentPicker = { getDocumentAsync: async () => ({ canceled: true }) };
 import { STORAGE_KEYS } from './keys';
 import { DEFAULT_CATEGORIES, isProtectedCategory } from '../data/defaultCategories';
 
