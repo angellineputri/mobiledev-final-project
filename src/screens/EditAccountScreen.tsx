@@ -10,14 +10,14 @@ import {
   TextInput,
   View,
 } from 'react-native';
-import { NumericKeypad, formatAmountDisplay, rawToAmount, amountToRaw, applyNumpadKeyAtCursor, rawCursorToDisplayCursor } from '@/components/NumericKeypad';
+import { NumericKeypad, formatAmountDisplay, rawToAmount, amountToRaw, applyNumpadKeyAtCursor, rawCursorToDisplayCursor } from '../components/NumericKeypad';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Feather } from '@expo/vector-icons';
 
-import { CurrencyPickerModal } from '@/components/CurrencyPickerModal';
-import { Radii, ScreenPadding } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
-import { getRatesFromHome } from '@/api/exchangeRate';
+import { CurrencyPickerModal } from '../components/CurrencyPickerModal';
+import { Radii, ScreenPadding } from '../constants/theme';
+import { useTheme } from '../hooks/use-theme';
+import { getRatesFromHome } from '../api/exchangeRate';
 import {
   accountDisplay,
   addExpense,
@@ -29,7 +29,7 @@ import {
   getSettings,
   updateAccount,
   updateSettings,
-} from '@/storage/storage';
+} from '../storage/storage';
 
 const round2 = (v: number) => Math.round((v + Number.EPSILON) * 100) / 100;
 

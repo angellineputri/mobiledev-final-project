@@ -1,7 +1,7 @@
 import { StyleSheet, Text, type TextProps } from 'react-native';
 
-import { ThemeTokens } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
+import { ThemeTokens } from '../constants/theme';
+import { useTheme } from '../hooks/use-theme';
 
 export type ThemedTextType =
   | 'default'      // 15 / 500 — general body

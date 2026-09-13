@@ -18,11 +18,11 @@ import {
 } from 'react-native';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Feather } from '@expo/vector-icons';
-import { useTheme } from '@/hooks/use-theme';
-import { ScreenPadding, SHADOW_COLOR, WHITE } from '@/constants/theme';
-import { NumericKeypad, formatAmountDisplay, rawToAmount, amountToRaw, applyNumpadKeyAtCursor, displayCursorToRawCursor, rawCursorToDisplayCursor } from '@/components/NumericKeypad';
-import { formatMoney, formatMoneyWithCode } from '@/logic/moneyFormatter';
-import { CurrencyPickerModal } from '@/components/CurrencyPickerModal';
+import { useTheme } from '../hooks/use-theme';
+import { ScreenPadding, SHADOW_COLOR, WHITE } from '../constants/theme';
+import { NumericKeypad, formatAmountDisplay, rawToAmount, amountToRaw, applyNumpadKeyAtCursor, displayCursorToRawCursor, rawCursorToDisplayCursor } from '../components/NumericKeypad';
+import { formatMoney, formatMoneyWithCode } from '../logic/moneyFormatter';
+import { CurrencyPickerModal } from '../components/CurrencyPickerModal';
 import {
   addExpense,
   addIncome,
@@ -38,8 +38,8 @@ import {
   updateIncome,
   updateSubBalance,
   updateTransfer,
-} from '@/storage/storage';
-import { getExchangeRate } from '@/api/exchangeRate';
+} from '../storage/storage';
+import { getExchangeRate } from '../api/exchangeRate';
 
 // types
 

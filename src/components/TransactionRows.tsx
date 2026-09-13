@@ -4,9 +4,9 @@ import { Animated, Pressable, StyleSheet, Text, TouchableOpacity, View } from 'r
 import { Swipeable } from 'react-native-gesture-handler';
 import { Feather } from '@expo/vector-icons';
 
-import { useTheme } from '@/hooks/use-theme';
-import { accountAmountDisplay, formatMoney } from '@/logic/moneyFormatter';
-import { getExchangeRate } from '@/api/exchangeRate';
+import { useTheme } from '../hooks/use-theme';
+import { accountAmountDisplay, formatMoney } from '../logic/moneyFormatter';
+import { getExchangeRate } from '../api/exchangeRate';
 
 // types
 

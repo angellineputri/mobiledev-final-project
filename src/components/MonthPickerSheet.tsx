@@ -9,9 +9,9 @@ import {
 } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { useState, useEffect } from 'react';
-import { useTheme } from '@/hooks/use-theme';
-import { ScreenPadding } from '@/constants/theme';
-import { formatMoney, formatMoneyWithCode } from '@/logic/moneyFormatter';
+import { useTheme } from '../hooks/use-theme';
+import { ScreenPadding } from '../constants/theme';
+import { formatMoney, formatMoneyWithCode } from '../logic/moneyFormatter';
 
 const MONTH_ABBREVS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
   'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];

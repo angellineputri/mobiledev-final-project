@@ -9,11 +9,11 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFocusEffect } from '@react-navigation/native';
 import { Feather } from '@expo/vector-icons';
-import { useTheme } from '@/hooks/use-theme';
-import { Radii, ScreenPadding } from '@/constants/theme';
-import { formatMoney } from '@/logic/moneyFormatter';
-import { computeGoalConversion, type GoalConversion } from '@/logic/savingGoalConversion';
-import { getSavingGoals, getSettings } from '@/storage/storage';
+import { useTheme } from '../hooks/use-theme';
+import { Radii, ScreenPadding } from '../constants/theme';
+import { formatMoney } from '../logic/moneyFormatter';
+import { computeGoalConversion, type GoalConversion } from '../logic/savingGoalConversion';
+import { getSavingGoals, getSettings } from '../storage/storage';
 
 const PAGE_SIZE = 5;
 

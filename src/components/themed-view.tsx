@@ -1,7 +1,7 @@
 import { View, type ViewProps } from 'react-native';
 
-import { ThemeTokens } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
+import { ThemeTokens } from '../constants/theme';
+import { useTheme } from '../hooks/use-theme';
 
 export type ThemedViewProps = ViewProps & {
   type?: keyof ThemeTokens;

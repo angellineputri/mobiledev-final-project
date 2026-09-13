@@ -10,12 +10,12 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFocusEffect } from '@react-navigation/native';
 import { Feather } from '@expo/vector-icons';
-import { useTheme } from '@/hooks/use-theme';
-import { Radii, ScreenPadding, Spacing } from '@/constants/theme';
-import { accountAmountDisplay, formatMoney } from '@/logic/moneyFormatter';
-import { amountInAccountCurrency, round2 } from '@/logic/splitMath';
-import { addExpense, getAccounts, getSettings, getSplitBills, settleSplitEntry, updateSplitBill, updateSubBalance } from '@/storage/storage';
-import { calculateSettlementBalanceEffect } from '@/logic/businessLogic';
+import { useTheme } from '../hooks/use-theme';
+import { Radii, ScreenPadding, Spacing } from '../constants/theme';
+import { accountAmountDisplay, formatMoney } from '../logic/moneyFormatter';
+import { amountInAccountCurrency, round2 } from '../logic/splitMath';
+import { addExpense, getAccounts, getSettings, getSplitBills, settleSplitEntry, updateSplitBill, updateSubBalance } from '../storage/storage';
+import { calculateSettlementBalanceEffect } from '../logic/businessLogic';
 
 // types
 

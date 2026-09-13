@@ -15,18 +15,18 @@ import { Feather } from '@expo/vector-icons';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useFocusEffect } from '@react-navigation/native';
 
-import { Radii, ScreenPadding } from '@/constants/theme';
-import { formatMoney } from '@/logic/moneyFormatter';
+import { Radii, ScreenPadding } from '../constants/theme';
+import { formatMoney } from '../logic/moneyFormatter';
 import {
   NumericKeypad,
   applyNumpadKey,
   formatAmountDisplay,
   rawToAmount,
   amountToRaw,
-} from '@/components/NumericKeypad';
-import { useTheme } from '@/hooks/use-theme';
-import { getSavingGoals, getSettings, recordMonthlyAllocation, recordMonthlyRate } from '@/storage/storage';
-import { getExchangeRate, monthRateDate } from '@/api/exchangeRate';
+} from '../components/NumericKeypad';
+import { useTheme } from '../hooks/use-theme';
+import { getSavingGoals, getSettings, recordMonthlyAllocation, recordMonthlyRate } from '../storage/storage';
+import { getExchangeRate, monthRateDate } from '../api/exchangeRate';
 
 // types
 

@@ -10,10 +10,10 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFocusEffect } from '@react-navigation/native';
 import { Feather } from '@expo/vector-icons';
 import { Image } from 'expo-image';
-import { useTheme } from '@/hooks/use-theme';
-import { Radii, ScreenPadding } from '@/constants/theme';
-import { formatMoney } from '@/logic/moneyFormatter';
-import { getSavingGoals, getSettings } from '@/storage/storage';
+import { useTheme } from '../hooks/use-theme';
+import { Radii, ScreenPadding } from '../constants/theme';
+import { formatMoney } from '../logic/moneyFormatter';
+import { getSavingGoals, getSettings } from '../storage/storage';
 
 const MONTH_NAMES = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 

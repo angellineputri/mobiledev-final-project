@@ -9,10 +9,10 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Feather } from '@expo/vector-icons';
-import { useTheme } from '@/hooks/use-theme';
-import { Radii, ScreenPadding } from '@/constants/theme';
-import { accountAmountDisplay, formatMoneyWithCode } from '@/logic/moneyFormatter';
-import { getAccounts, getSplitBills, getSettings } from '@/storage/storage';
+import { useTheme } from '../hooks/use-theme';
+import { Radii, ScreenPadding } from '../constants/theme';
+import { accountAmountDisplay, formatMoneyWithCode } from '../logic/moneyFormatter';
+import { getAccounts, getSplitBills, getSettings } from '../storage/storage';
 
 // types
 

@@ -14,19 +14,19 @@ import { Feather } from '@expo/vector-icons';
 import { useFocusEffect } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { calculateDailyLedger, calculateBudgetProgress, calculateDailyAllowance } from '@/budget/engine';
-import type { Budget } from '@/budget/types';
-import { ThemedText } from '@/components/themed-text';
-import { Radii, SHADOW_COLOR, ScreenPadding, Spacing } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
-import { accountDisplay } from '@/logic/businessLogic';
-import { formatMoney, formatMoneyWithCode, formatApprox } from '@/logic/moneyFormatter';
+import { calculateDailyLedger, calculateBudgetProgress, calculateDailyAllowance } from '../budget/engine';
+import type { Budget } from '../budget/types';
+import { ThemedText } from '../components/themed-text';
+import { Radii, SHADOW_COLOR, ScreenPadding, Spacing } from '../constants/theme';
+import { useTheme } from '../hooks/use-theme';
+import { accountDisplay } from '../logic/businessLogic';
+import { formatMoney, formatMoneyWithCode, formatApprox } from '../logic/moneyFormatter';
 import {
   getAccounts, getCategories, getExpenses, getIncomes,
   getOrInheritBudget, getSavingGoals, getSettings, getSplitBills,
   accountHomeTotal,
-} from '@/storage/storage';
-import { getRatesFromHome } from '@/api/exchangeRate';
+} from '../storage/storage';
+import { getRatesFromHome } from '../api/exchangeRate';
 
 // types
 

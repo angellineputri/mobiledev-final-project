@@ -16,14 +16,14 @@ import {
 import { Feather } from '@expo/vector-icons';
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { CurrencyPickerModal } from '@/components/CurrencyPickerModal';
-import { NumericKeypad, applyNumpadKey, formatAmountDisplay } from '@/components/NumericKeypad';
-import { MaxContentWidth, Radii, ScreenPadding } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
-import { formatMoney, formatMoneyWithCode } from '@/logic/moneyFormatter';
-import { computeItemShares, parseAmountInput } from '@/logic/splitMath';
-import { getExchangeRate } from '@/api/exchangeRate';
-import { calculateSplitBillBalanceEffect } from '@/logic/businessLogic';
+import { CurrencyPickerModal } from '../components/CurrencyPickerModal';
+import { NumericKeypad, applyNumpadKey, formatAmountDisplay } from '../components/NumericKeypad';
+import { MaxContentWidth, Radii, ScreenPadding } from '../constants/theme';
+import { useTheme } from '../hooks/use-theme';
+import { formatMoney, formatMoneyWithCode } from '../logic/moneyFormatter';
+import { computeItemShares, parseAmountInput } from '../logic/splitMath';
+import { getExchangeRate } from '../api/exchangeRate';
+import { calculateSplitBillBalanceEffect } from '../logic/businessLogic';
 import {
   addExpense,
   addSplitBill,
@@ -36,7 +36,7 @@ import {
   updateSubBalance,
   updateExpense,
   updateSplitBill,
-} from '@/storage/storage';
+} from '../storage/storage';
 
 // types
 

@@ -15,17 +15,17 @@ import DateTimePicker from '@react-native-community/datetimepicker';
 import { Feather } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { ThemedText } from '@/components/themed-text';
-import { CurrencyPickerModal } from '@/components/CurrencyPickerModal';
-import { NumericKeypad, applyNumpadKey, formatAmountDisplay, rawToAmount, amountToRaw } from '@/components/NumericKeypad';
-import { MaxContentWidth, Radii, ScreenPadding, Spacing } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
+import { ThemedText } from '../components/themed-text';
+import { CurrencyPickerModal } from '../components/CurrencyPickerModal';
+import { NumericKeypad, applyNumpadKey, formatAmountDisplay, rawToAmount, amountToRaw } from '../components/NumericKeypad';
+import { MaxContentWidth, Radii, ScreenPadding, Spacing } from '../constants/theme';
+import { useTheme } from '../hooks/use-theme';
 import {
   applyExpenseToBalance,
   editExpenseBalance,
   reverseExpenseFromBalance,
   suggestCategory,
-} from '@/logic/businessLogic';
+} from '../logic/businessLogic';
 import {
   addExpense,
   addIncome,
@@ -35,8 +35,8 @@ import {
   getSettings,
   updateSubBalance,
   updateExpense,
-} from '@/storage/storage';
-import { getExchangeRate } from '@/api/exchangeRate';
+} from '../storage/storage';
+import { getExchangeRate } from '../api/exchangeRate';
 
 // types
 

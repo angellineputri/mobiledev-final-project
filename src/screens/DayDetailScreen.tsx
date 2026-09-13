@@ -10,16 +10,16 @@ import {
 import { Feather } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { calculateDailyAllowance, calculateDailyLedger } from '@/budget/engine';
-import type { Budget } from '@/budget/types';
-import { Radii } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
-import { formatMoney } from '@/logic/moneyFormatter';
-import { ExpenseRow, IncomeRow, TransferRow } from '@/components/TransactionRows';
+import { calculateDailyAllowance, calculateDailyLedger } from '../budget/engine';
+import type { Budget } from '../budget/types';
+import { Radii } from '../constants/theme';
+import { useTheme } from '../hooks/use-theme';
+import { formatMoney } from '../logic/moneyFormatter';
+import { ExpenseRow, IncomeRow, TransferRow } from '../components/TransactionRows';
 import {
   deleteExpense, deleteIncome, deleteTransfer, getAccounts, getCategories, getExpenses, getIncomes,
   getOrInheritBudget, getSettings, getTransfers, updateSubBalance,
-} from '@/storage/storage';
+} from '../storage/storage';
 
 // types
 

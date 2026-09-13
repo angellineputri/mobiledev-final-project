@@ -12,11 +12,11 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Feather } from '@expo/vector-icons';
 
-import { CurrencyPickerModal } from '@/components/CurrencyPickerModal';
-import { NumericKeypad, applyNumpadKey, formatAmountDisplay, rawToAmount } from '@/components/NumericKeypad';
-import { Radii, ScreenPadding, TabBarHeight } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
-import { addAccount } from '@/storage/storage';
+import { CurrencyPickerModal } from '../components/CurrencyPickerModal';
+import { NumericKeypad, applyNumpadKey, formatAmountDisplay, rawToAmount } from '../components/NumericKeypad';
+import { Radii, ScreenPadding, TabBarHeight } from '../constants/theme';
+import { useTheme } from '../hooks/use-theme';
+import { addAccount } from '../storage/storage';
 
 type AccountType = 'cash' | 'bank' | 'credit_card';
 

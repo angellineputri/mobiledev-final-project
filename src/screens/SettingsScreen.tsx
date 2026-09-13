@@ -12,14 +12,14 @@ import { Feather } from '@expo/vector-icons';
 import { useFocusEffect } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { ThemedText } from '@/components/themed-text';
-import { CurrencyPickerModal } from '@/components/CurrencyPickerModal';
-import { Radii, ScreenPadding, Spacing, themes } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
-import { useThemeContext } from '@/contexts/ThemeContext';
-import { getCategories, getSettings, updateSettings, exportAllData, pickAndImport, clearAllData } from '@/storage/storage';
-import { seedDemoData } from '@/data/seedDemoData';
-import type { ThemeMode, ThemeAccent } from '@/constants/theme';
+import { ThemedText } from '../components/themed-text';
+import { CurrencyPickerModal } from '../components/CurrencyPickerModal';
+import { Radii, ScreenPadding, Spacing, themes } from '../constants/theme';
+import { useTheme } from '../hooks/use-theme';
+import { useThemeContext } from '../contexts/ThemeContext';
+import { getCategories, getSettings, updateSettings, exportAllData, pickAndImport, clearAllData } from '../storage/storage';
+import { seedDemoData } from '../data/seedDemoData';
+import type { ThemeMode, ThemeAccent } from '../constants/theme';
 
 // Theme picker modal
 

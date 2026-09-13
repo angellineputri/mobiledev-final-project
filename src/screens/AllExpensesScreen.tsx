@@ -18,20 +18,20 @@ import { Feather } from '@expo/vector-icons';
 import { useFocusEffect } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { calculateBudgetProgress, calculateDailyAllowance } from '@/budget/engine';
-import type { Budget, SavingGoal } from '@/budget/types';
-import { ThemedText } from '@/components/themed-text';
-import MonthPickerSheet from '@/components/MonthPickerSheet';
-import { Radii, SHADOW_COLOR, Spacing, WHITE } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
-import { accountAmountDisplay, formatMoney, formatMoneyWithCode } from '@/logic/moneyFormatter';
-import { getExchangeRate, monthRateDate } from '@/api/exchangeRate';
+import { calculateBudgetProgress, calculateDailyAllowance } from '../budget/engine';
+import type { Budget, SavingGoal } from '../budget/types';
+import { ThemedText } from '../components/themed-text';
+import MonthPickerSheet from '../components/MonthPickerSheet';
+import { Radii, SHADOW_COLOR, Spacing, WHITE } from '../constants/theme';
+import { useTheme } from '../hooks/use-theme';
+import { accountAmountDisplay, formatMoney, formatMoneyWithCode } from '../logic/moneyFormatter';
+import { getExchangeRate, monthRateDate } from '../api/exchangeRate';
 import {
   deleteExpense, deleteIncome, deleteTransfer, getAccounts, getCategories, getExpenses, getIncomes,
   getOrInheritBudget, getSavingGoals, getSettings, getTransfers, recordMonthlyAllocation, recordMonthlyRate, updateSubBalance,
-} from '@/storage/storage';
-import { NumericKeypad, formatAmountDisplay, rawToAmount, amountToRaw, applyNumpadKeyAtCursor, displayCursorToRawCursor, rawCursorToDisplayCursor } from '@/components/NumericKeypad';
-import { ExpenseRow, IncomeRow, TransferRow } from '@/components/TransactionRows';
+} from '../storage/storage';
+import { NumericKeypad, formatAmountDisplay, rawToAmount, amountToRaw, applyNumpadKeyAtCursor, displayCursorToRawCursor, rawCursorToDisplayCursor } from '../components/NumericKeypad';
+import { ExpenseRow, IncomeRow, TransferRow } from '../components/TransactionRows';
 
 // types
 

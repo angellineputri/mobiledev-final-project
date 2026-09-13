@@ -11,10 +11,10 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFocusEffect } from '@react-navigation/native';
 import { Feather } from '@expo/vector-icons';
-import { useTheme } from '@/hooks/use-theme';
-import { Radii, ScreenPadding, Spacing } from '@/constants/theme';
-import { accountAmountDisplay, formatMoney, formatMoneyWithCode } from '@/logic/moneyFormatter';
-import { amountInAccountCurrency } from '@/logic/splitMath';
+import { useTheme } from '../hooks/use-theme';
+import { Radii, ScreenPadding, Spacing } from '../constants/theme';
+import { accountAmountDisplay, formatMoney, formatMoneyWithCode } from '../logic/moneyFormatter';
+import { amountInAccountCurrency } from '../logic/splitMath';
 import {
   addExpense,
   deleteExpense,
@@ -27,8 +27,8 @@ import {
   updateExpense,
   updateSubBalance,
   updateSplitBill,
-} from '@/storage/storage';
-import { calculateSettlementBalanceEffect } from '@/logic/businessLogic';
+} from '../storage/storage';
+import { calculateSettlementBalanceEffect } from '../logic/businessLogic';
 
 // types
 

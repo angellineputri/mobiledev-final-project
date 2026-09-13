@@ -11,11 +11,11 @@ import {
 import { Feather } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import type { CategoryLimit } from '@/budget/types';
-import { NumericKeypad, applyNumpadKey, formatAmountDisplay, rawToAmount, amountToRaw } from '@/components/NumericKeypad';
-import { Radii, ScreenPadding, Spacing } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
-import { getCategories, getOrInheritBudget, getSettings, setBudget as saveBudget } from '@/storage/storage';
+import type { CategoryLimit } from '../budget/types';
+import { NumericKeypad, applyNumpadKey, formatAmountDisplay, rawToAmount, amountToRaw } from '../components/NumericKeypad';
+import { Radii, ScreenPadding, Spacing } from '../constants/theme';
+import { useTheme } from '../hooks/use-theme';
+import { getCategories, getOrInheritBudget, getSettings, setBudget as saveBudget } from '../storage/storage';
 
 type Category = { id: string; name: string };
 

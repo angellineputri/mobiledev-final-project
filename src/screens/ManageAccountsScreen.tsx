@@ -7,12 +7,12 @@ import { Feather } from '@expo/vector-icons';
 import { useFocusEffect } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { ThemedText } from '@/components/themed-text';
-import { CurrencyPickerModal } from '@/components/CurrencyPickerModal';
-import { Radii, ScreenPadding, Spacing } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
-import { formatMoney } from '@/logic/moneyFormatter';
-import { deleteAccount, getAccounts, updateAccount } from '@/storage/storage';
+import { ThemedText } from '../components/themed-text';
+import { CurrencyPickerModal } from '../components/CurrencyPickerModal';
+import { Radii, ScreenPadding, Spacing } from '../constants/theme';
+import { useTheme } from '../hooks/use-theme';
+import { formatMoney } from '../logic/moneyFormatter';
+import { deleteAccount, getAccounts, updateAccount } from '../storage/storage';
 
 type AccountType = 'cash' | 'bank' | 'credit_card' | 'other';
 type CurrencyBalance = { code: string; balance: number };

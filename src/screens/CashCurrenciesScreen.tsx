@@ -16,13 +16,13 @@ import { Feather } from '@expo/vector-icons';
 import { useFocusEffect } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { CurrencyPickerModal } from '@/components/CurrencyPickerModal';
-import { NumericKeypad, applyNumpadKey, formatAmountDisplay, rawToAmount, amountToRaw } from '@/components/NumericKeypad';
-import { Radii, ScreenPadding, Spacing } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
-import { formatMoney } from '@/logic/moneyFormatter';
-import { getRatesFromHome } from '@/api/exchangeRate';
-import { getAccounts, getSettings, accountHomeTotal, updateSubBalance, updateSettings, deleteAccountWithExpenses, countAccountEntries } from '@/storage/storage';
+import { CurrencyPickerModal } from '../components/CurrencyPickerModal';
+import { NumericKeypad, applyNumpadKey, formatAmountDisplay, rawToAmount, amountToRaw } from '../components/NumericKeypad';
+import { Radii, ScreenPadding, Spacing } from '../constants/theme';
+import { useTheme } from '../hooks/use-theme';
+import { formatMoney } from '../logic/moneyFormatter';
+import { getRatesFromHome } from '../api/exchangeRate';
+import { getAccounts, getSettings, accountHomeTotal, updateSubBalance, updateSettings, deleteAccountWithExpenses, countAccountEntries } from '../storage/storage';
 
 type CurrencyBalance = { code: string; balance: number };
 type Account = {
@@ -145,7 +145,7 @@ export default function CashCurrenciesScreen({ route, navigation }: any) {
             const accounts = await getAccounts();
             const target = accounts.find((a: Account) => a.id === accountId);
             if (target) {
-              const { updateAccount } = await import('@/storage/storage');
+              const { updateAccount } = await import('../storage/storage');
               await updateAccount(accountId, {
                 currencies: target.currencies.filter((cur: CurrencyBalance) => cur.code !== c.code),
               });

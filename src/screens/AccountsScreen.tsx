@@ -12,13 +12,13 @@ import { Feather } from '@expo/vector-icons';
 import { useFocusEffect } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { ThemedText } from '@/components/themed-text';
-import { Radii, ScreenPadding, Spacing, TabBarHeight } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
-import { formatMoney, formatMoneyWithCode, formatApprox } from '@/logic/moneyFormatter';
-import { getRatesFromHome } from '@/api/exchangeRate';
-import { computeGoalConversion, type GoalConversion } from '@/logic/savingGoalConversion';
-import { getAccounts, getSettings, accountDisplay, getSavingGoals } from '@/storage/storage';
+import { ThemedText } from '../components/themed-text';
+import { Radii, ScreenPadding, Spacing, TabBarHeight } from '../constants/theme';
+import { useTheme } from '../hooks/use-theme';
+import { formatMoney, formatMoneyWithCode, formatApprox } from '../logic/moneyFormatter';
+import { getRatesFromHome } from '../api/exchangeRate';
+import { computeGoalConversion, type GoalConversion } from '../logic/savingGoalConversion';
+import { getAccounts, getSettings, accountDisplay, getSavingGoals } from '../storage/storage';
 
 // types
 

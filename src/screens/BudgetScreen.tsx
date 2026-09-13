@@ -13,17 +13,17 @@ import { Feather } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useFocusEffect } from '@react-navigation/native';
 
-import { calculateDailyAllowance } from '@/budget/engine';
-import type { Budget } from '@/budget/types';
-import { Radii, ScreenPadding, Spacing } from '@/constants/theme';
-import { formatMoney, formatMoneyWithCode } from '@/logic/moneyFormatter';
-import { NumericKeypad, formatAmountDisplay, rawToAmount, amountToRaw, applyNumpadKeyAtCursor, displayCursorToRawCursor, rawCursorToDisplayCursor } from '@/components/NumericKeypad';
-import { useTheme } from '@/hooks/use-theme';
+import { calculateDailyAllowance } from '../budget/engine';
+import type { Budget } from '../budget/types';
+import { Radii, ScreenPadding, Spacing } from '../constants/theme';
+import { formatMoney, formatMoneyWithCode } from '../logic/moneyFormatter';
+import { NumericKeypad, formatAmountDisplay, rawToAmount, amountToRaw, applyNumpadKeyAtCursor, displayCursorToRawCursor, rawCursorToDisplayCursor } from '../components/NumericKeypad';
+import { useTheme } from '../hooks/use-theme';
 import {
   getExpenses, getIncomes, getOrInheritBudget, getSavingGoals, getSettings,
   setBudget as saveBudget,
-} from '@/storage/storage';
-import { getExchangeRate, monthRateDate } from '@/api/exchangeRate';
+} from '../storage/storage';
+import { getExchangeRate, monthRateDate } from '../api/exchangeRate';
 
 // types
 

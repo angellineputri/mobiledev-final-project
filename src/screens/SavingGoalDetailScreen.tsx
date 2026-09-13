@@ -14,17 +14,17 @@ import { useFocusEffect } from '@react-navigation/native';
 import { Feather } from '@expo/vector-icons';
 import { Image } from 'expo-image';
 import * as ImagePicker from 'expo-image-picker';
-import { useTheme } from '@/hooks/use-theme';
-import { Radii, ScreenPadding } from '@/constants/theme';
-import { formatMoney } from '@/logic/moneyFormatter';
-import { computeGoalConversion, type GoalConversion } from '@/logic/savingGoalConversion';
-import { NumericKeypad, applyNumpadKey, formatAmountDisplay, rawToAmount, amountToRaw } from '@/components/NumericKeypad';
-import { CurrencyPickerModal } from '@/components/CurrencyPickerModal';
-import { getExchangeRate, monthRateDate } from '@/api/exchangeRate';
+import { useTheme } from '../hooks/use-theme';
+import { Radii, ScreenPadding } from '../constants/theme';
+import { formatMoney } from '../logic/moneyFormatter';
+import { computeGoalConversion, type GoalConversion } from '../logic/savingGoalConversion';
+import { NumericKeypad, applyNumpadKey, formatAmountDisplay, rawToAmount, amountToRaw } from '../components/NumericKeypad';
+import { CurrencyPickerModal } from '../components/CurrencyPickerModal';
+import { getExchangeRate, monthRateDate } from '../api/exchangeRate';
 import {
   completeSavingGoal, deleteGoalPhoto, deleteSavingGoal, getSavingGoals, getSettings,
   persistGoalPhoto, recordMonthlyRate, reopenSavingGoal, upsertSavingGoal,
-} from '@/storage/storage';
+} from '../storage/storage';
 
 const MAX_GOAL_PHOTOS = 3;
 

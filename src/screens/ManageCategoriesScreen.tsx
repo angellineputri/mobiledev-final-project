@@ -7,11 +7,11 @@ import { Feather } from '@expo/vector-icons';
 import { useFocusEffect } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { ThemedText } from '@/components/themed-text';
-import { Radii, ScreenPadding, Spacing } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
-import { addCategory, deleteCategory, getCategories, updateCategory } from '@/storage/storage';
-import { isProtectedCategory } from '@/data/defaultCategories';
+import { ThemedText } from '../components/themed-text';
+import { Radii, ScreenPadding, Spacing } from '../constants/theme';
+import { useTheme } from '../hooks/use-theme';
+import { addCategory, deleteCategory, getCategories, updateCategory } from '../storage/storage';
+import { isProtectedCategory } from '../data/defaultCategories';
 
 type Category = { id: string; name: string; kind?: string; isDefault: boolean };
 type Tab = 'expense' | 'income';
@@ -27,7 +27,7 @@ function AddRow({
   onChange: (v: string) => void;
   onAdd: () => void;
   adding: boolean;
-  t: ReturnType<typeof import('@/hooks/use-theme').useTheme>;
+  t: ReturnType<typeof import('../hooks/use-theme').useTheme>;
 }) {
   return (
     <View style={[rowStyles.addRow, { borderColor: t.border }]}>
@@ -76,7 +76,7 @@ function CategoryRow({
   onEditSave: () => void;
   onEditCancel: () => void;
   onDelete: (cat: Category) => void;
-  t: ReturnType<typeof import('@/hooks/use-theme').useTheme>;
+  t: ReturnType<typeof import('../hooks/use-theme').useTheme>;
 }) {
   const isEditing = editingId === cat.id;
   const isDeleting = deletingId === cat.id;

@@ -1,5 +1,5 @@
-import { getExchangeRate } from '@/api/exchangeRate';
-import { round2 } from '@/logic/splitMath';
+import { getExchangeRate } from '../api/exchangeRate';
+import { round2 } from '../logic/splitMath';
 
 // remember rates for this session so each one is only fetched once
 const rateCache = new Map<string, number>();

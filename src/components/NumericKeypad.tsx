@@ -1,6 +1,6 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Feather } from '@expo/vector-icons';
-import { useTheme } from '@/hooks/use-theme';
+import { useTheme } from '../hooks/use-theme';
 export { applyNumpadKey, formatAmountDisplay, rawToAmount, amountToRaw, decimalsFor, displayCursorToRawCursor, rawCursorToDisplayCursor, applyNumpadKeyAtCursor } from './numpadLogic';
 
 interface Props {

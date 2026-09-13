@@ -13,9 +13,9 @@ import {
 import { Feather } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { Radii, ScreenPadding, Spacing } from '@/constants/theme';
-import { useTheme } from '@/hooks/use-theme';
-import { SUPPORTED_CURRENCIES } from '@/data/supportedCurrencies';
+import { Radii, ScreenPadding, Spacing } from '../constants/theme';
+import { useTheme } from '../hooks/use-theme';
+import { SUPPORTED_CURRENCIES } from '../data/supportedCurrencies';
 
 type Props = {
   visible: boolean;

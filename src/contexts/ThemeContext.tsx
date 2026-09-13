@@ -1,8 +1,8 @@
 import React, { createContext, useCallback, useContext, useEffect, useState } from 'react';
 import { useColorScheme } from 'react-native';
 
-import { ThemeAccent, ThemeMode, ThemeTokens, resolveTheme } from '@/constants/theme';
-import { getSettings, updateSettings } from '@/storage/storage';
+import { ThemeAccent, ThemeMode, ThemeTokens, resolveTheme } from '../constants/theme';
+import { getSettings, updateSettings } from '../storage/storage';
 
 type ThemeContextValue = {
   theme: ThemeTokens;

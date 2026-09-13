@@ -10,18 +10,18 @@ import {
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Feather } from '@expo/vector-icons';
-import { useTheme } from '@/hooks/use-theme';
-import { Radii, SHADOW_COLOR, ScreenPadding, Spacing } from '@/constants/theme';
-import { accountAmountDisplay, formatMoneyWithCode } from '@/logic/moneyFormatter';
+import { useTheme } from '../hooks/use-theme';
+import { Radii, SHADOW_COLOR, ScreenPadding, Spacing } from '../constants/theme';
+import { accountAmountDisplay, formatMoneyWithCode } from '../logic/moneyFormatter';
 import {
   getAccounts,
   getSplitBills,
   getSettings,
   settleSplitEntry,
   updateSubBalance,
-} from '@/storage/storage';
-import { calculateSettlementBalanceEffect } from '@/logic/businessLogic';
-import MonthPickerSheet from '@/components/MonthPickerSheet';
+} from '../storage/storage';
+import { calculateSettlementBalanceEffect } from '../logic/businessLogic';
+import MonthPickerSheet from '../components/MonthPickerSheet';
 
 // types
 
