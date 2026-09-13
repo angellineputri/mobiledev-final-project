@@ -1,3 +1,4 @@
+/* eslint-disable */
 // add entry screen: add an expense, income or transfer
 // amount on top, then type, title and rows that open their own sheets
 

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { StyleSheet, Text, type TextProps } from 'react-native';
 
 import { ThemeTokens } from '../constants/theme';

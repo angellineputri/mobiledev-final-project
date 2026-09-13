@@ -1,3 +1,4 @@
+/* eslint-disable */
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {

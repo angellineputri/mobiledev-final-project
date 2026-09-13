@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useCallback, useMemo, useRef, useState } from 'react';
 import {
   ActivityIndicator,

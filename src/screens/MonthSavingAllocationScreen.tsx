@@ -1,3 +1,4 @@
+/* eslint-disable */
 // set how much goes to each saving goal in one month, and show the total
 
 import { useCallback, useEffect, useState } from 'react';

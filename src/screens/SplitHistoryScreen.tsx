@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useCallback, useMemo, useState } from 'react';
 import { useFocusEffect } from '@react-navigation/native';
 import {

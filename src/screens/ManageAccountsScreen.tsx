@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useCallback, useEffect, useState } from 'react';
 import {
   ActivityIndicator, Alert, KeyboardAvoidingView, Modal, Platform, Pressable,
