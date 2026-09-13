@@ -1,10 +1,8 @@
-import 'react-native-gesture-handler';
 import { registerRootComponent } from 'expo';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 
 import { ThemeProvider, useThemeContext } from './src/contexts/ThemeContext';
@@ -178,11 +176,11 @@ function RootNavigator() {
 
 function App() {
   return (
-    <GestureHandlerRootView style={{ flex: 1 }}>
+    <View style={{ flex: 1 }}>
       <ThemeProvider>
         <RootNavigator />
       </ThemeProvider>
-    </GestureHandlerRootView>
+    </View>
   );
 }
 
